@@ -13,11 +13,25 @@ body {
     width: 30px;
     height: 30px;
     font-size: 16px;
-    color: #ffffff;
-    background-color: grey;
+    color: #fff;
+    background-color: rgb(32,33,36);
     border: none;
     border-radius: 100%;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#themeButton.light-mode {
+    background-color: #f8f9fa;
+    color: #000000;
+}
+
+.button i {
+    transition: transform 0.3s;
+}
+
+#themeButton.light-mode i {
+    transform: rotate(180deg);
 }
 
 
@@ -78,13 +92,17 @@ input[type="number"] {
     margin-bottom: 15px;
 }
 
-.calButton {
+.button-container {
+    text-align: center;
+}
+
+.button {
     color: #ffffff;
     background-color: grey;
     width: 90%;
     padding: 5px;
     font-size: 16px;
-    border: none;
+    border: none;   
     border-radius: 5px;
     cursor: pointer;
 }

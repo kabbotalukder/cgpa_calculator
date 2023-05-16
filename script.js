@@ -1,3 +1,20 @@
+window.onload = function() {
+    var prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    var body = document.body;
+    var themeButton = document.getElementById("themeButton");
+    var icon = themeButton.querySelector("i");
+
+    if (prefersDarkMode) {
+        body.classList.add("dark-mode");
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+    } else {
+        body.classList.remove("dark-mode");
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    }
+}
+
 function calculateGPA() {
     var semester1 = parseFloat(document.getElementById("semester1").value);
     var semester2 = parseFloat(document.getElementById("semester2").value);
@@ -26,4 +43,14 @@ function toggleTheme() {
     var body = document.body;
     body.classList.toggle("dark-mode");
     var themeButton = document.getElementById("themeButton");
+    var icon = themeButton.querySelector("i");
+    if (body.classList.contains("dark-mode")) {
+        themeButton.classList.add("light-mode");
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+    } else {
+        themeButton.classList.remove("light-mode");
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+    }
 }

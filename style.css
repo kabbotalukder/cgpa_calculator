@@ -20,13 +20,13 @@ body {
     cursor: pointer;
 }
 
-/* Light Mode Styles */
+
 .light-mode {
     --background-color: #ffffff;
     --text-color: #000000;
 }
 
-/* Dark Mode Styles */
+
 .dark-mode {
     --background-color:rgb(32,33,36);
     --text-color: #ffffff;

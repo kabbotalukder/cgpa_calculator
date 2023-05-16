@@ -4,6 +4,36 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#themeButton {
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: grey;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+#themeButton i {
+    margin-right: 5px;
+}
+
+/* Light Mode Styles */
+.light-mode {
+    --background-color: #ffffff;
+    --text-color: #000000;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    --background-color:rgb(32,33,36);
+    --text-color: #ffffff;
 }
 
 h2 {
@@ -23,6 +53,7 @@ h2 {
 }
 
 .dev a{
+    color: grey;
     font-size: 12px;
     margin: 0;
     padding: 0;
@@ -51,8 +82,13 @@ input[type="number"] {
     margin-bottom: 15px;
 }
 
-.button {
-    width: 100%;
+.calButton {
+    color: #ffffff;
+    background-color: grey;
+    width: 90%;
     padding: 5px;
     font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }

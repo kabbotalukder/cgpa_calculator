@@ -21,3 +21,9 @@ function calculateGPA() {
         document.getElementById("result").innerHTML = "8th Semester GPA : " + gpa.toFixed(2);
     }
 }
+
+function toggleTheme() {
+    var body = document.body;
+    body.classList.toggle("dark-mode");
+    var themeButton = document.getElementById("themeButton");
+}

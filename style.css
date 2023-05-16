@@ -1,0 +1,7 @@
+input[type="number"] {
+    width: 80px;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}

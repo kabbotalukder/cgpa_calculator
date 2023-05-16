@@ -20,10 +20,6 @@ body {
     cursor: pointer;
 }
 
-#themeButton i {
-    margin-right: 5px;
-}
-
 /* Light Mode Styles */
 .light-mode {
     --background-color: #ffffff;

@@ -14,5 +14,10 @@ function calculateGPA() {
     var gpa = (total / 15) * 100;
     console.log(gpa);
 
-    document.getElementById("result").innerHTML = "8th Semester GPA : " + gpa.toFixed(2);
+    if(gpa > 4.00){
+        document.getElementById("result").innerHTML = "8th Semester GPA : 4.00";
+    }
+    else {
+        document.getElementById("result").innerHTML = "8th Semester GPA : " + gpa.toFixed(2);
+    }
 }
